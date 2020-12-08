@@ -19,7 +19,7 @@ public class News {
 
     private int department_id;
 
-    public News( String description, String title, int user_id,int department_id){
+    public News( String description, String title, int user_id){
 
         this.description=description;
         this.title=title;
@@ -29,10 +29,19 @@ public class News {
         this.news_type=TYPE_OF_NEWS;
 
 
+    }
+
+    public News (String title, String description, int user_id,int department_id){
+        this.title = title;
+
+        this.description = description;
+
+        this.user_id=user_id;
+
         this.department_id = department_id;
 
-        this.news_type="department";
 
+        this.news_type="department";
     }
 
 
